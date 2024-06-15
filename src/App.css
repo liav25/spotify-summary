@@ -1,21 +1,68 @@
 .App {
   text-align: center;
   margin-top: 50px;
+  background-image: url('../src/design_obj/background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-input {
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
   padding: 10px;
   font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f0f0; /* Grey background */
+  color: black;
+  outline: none; /* Remove outline */
   width: 300px;
 }
 
-button {
+.search-button {
   padding: 10px;
-  font-size: 16px;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 50%; /* Round button */
+  cursor: pointer;
   margin-left: 10px;
+}
+
+.search-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
 .carousel .slide img {
   width: 50%;
   margin: auto;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 24px; /* Adjust arrow size */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 10px; /* Adjust padding as needed */
+  z-index: 2; /* Ensure arrows are above carousel images */
+}
+
+.custom-arrow-left {
+  left: 15px; /* Adjust left position */
+}
+
+.custom-arrow-right {
+  right: 15px; /* Adjust right position */
 }
